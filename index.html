@@ -1,0 +1,269 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nandhakumar | Cyber Security Student Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- Base Styles ---------- */
+    :root {
+      --bg: #0b0f19;
+      --card: #151b29;
+      --text: #e4e7ef;
+      --accent: #00e0b8;
+      --muted: #9ca3af;
+      --radius: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      color: var(--accent);
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #101524;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin: 0 12px;
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(180deg, rgba(0,224,184,0.1), transparent);
+    }
+
+    .hero h1 {
+      font-size: 38px;
+    }
+
+    .hero h2 {
+      font-weight: 400;
+      font-size: 20px;
+      color: var(--muted);
+    }
+
+    .hero img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      margin-top: 20px;
+    }
+
+    /* ---------- About ---------- */
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .about p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ---------- Skills ---------- */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 16px;
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ---------- Projects ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .project {
+      background: var(--card);
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: transform 0.2s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      color: var(--accent);
+      font-size: 18px;
+    }
+
+    .project p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ---------- Contact ---------- */
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-info a {
+      display: inline-block;
+      margin: 10px 8px;
+      padding: 10px 20px;
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      color: var(--accent);
+      transition: 0.3s;
+    }
+
+    .contact-info a:hover {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      background: #0f1422;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Nandhakumar</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="nandha.jpg" alt="Profile Photo" />
+    <h1>Hi, I'm Nandhakumar 👋</h1>
+    <h2>2nd Year Cyber Security Student<br>Mahendra Engineering College</h2>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am <strong>Nandhakumar</strong>, a passionate 2nd-year Cyber Security student at 
+      <strong>Mahendra Engineering College</strong>. I'm enthusiastic about ethical hacking,
+      network security, and digital forensics. My goal is to become a skilled
+      cybersecurity professional who can protect systems and data from emerging threats.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div class="skill">Ethical Hacking</div>
+      <div class="skill">Network Security</div>
+      <div class="skill">Linux Commands</div>
+      <div class="skill">Python for Security</div>
+      <div class="skill">Web Application Testing</div>
+      <div class="skill">Cryptography Basics</div>
+      <div class="skill">Incident Response</div>
+      <div class="skill">Wireshark / Nmap</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Password Strength Checker</h3>
+        <p>
+          A Python-based tool that analyzes password complexity and provides suggestions to make it stronger.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Network Packet Analyzer</h3>
+        <p>
+          Built a Wireshark-like tool using Scapy in Python to monitor and analyze incoming network packets.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Phishing Awareness Page</h3>
+        <p>
+          Created an educational webpage explaining common phishing techniques and how to avoid them.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p>Email: <a href="mailto:nandhakumar@example.com">nandhakumar@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/nandhakumar</a></p>
+      <p>GitHub: <a href="https://github.com" target="_blank">github.com/nandhakumar</a></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Nandhakumar | Mahendra Engineering College | Cyber Security Portfolio
+  </footer>
+</body>
+</html>
